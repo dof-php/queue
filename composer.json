@@ -1,0 +1,35 @@
+{
+    "name": "dof-php/queue",
+    "description": "The default queue managment of DOF PHP framework",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "dof-php",
+            "email": "me@dof.php"
+        }
+    ],
+    "require": {
+        "php": "^7.3",
+        "dof-php/storage": "dev-master"
+    },
+    "require-dev": {
+        "dof-php/testing": "dev-master"
+    },
+  	"autoload": {
+		"psr-4": {
+			"DOF\\Queue\\": "./src/"
+		},
+		"files": [
+		],
+		"exclude-from-classmap": [
+        ]
+    },
+    "autoload-dev": {
+		"psr-4": {
+			"DOF\\Queue\\Test\\": "./test/"
+		}
+	},
+	"minimum-stability": "dev",
+    "prefer-stable": true
+}
